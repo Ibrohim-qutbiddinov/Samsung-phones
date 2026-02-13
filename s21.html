@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Samsung Galaxy S21 - Batafsil</title>
+    <style>
+        body { font-family: sans-serif; background: #0f172a; color: white; text-align: center; }
+        .gallery-container { max-width: 600px; margin: auto; padding: 20px; }
+        .main-img { width: 100%; border-radius: 15px; background: #1e293b; padding: 20px; }
+        .thumbnails { display: flex; justify-content: center; gap: 10px; margin-top: 20px; }
+        .thumb { width: 80px; height: 80px; cursor: pointer; border: 2px solid transparent; border-radius: 8px; }
+        .thumb:hover { border-color: #38bdf8; }
+        .color-selector { margin: 30px 0; }
+    </style>
+</head>
+<body>
+    <h1>Galaxy S21 5G</h1>
+    
+    <div class="gallery-container">
+        <img src="s21-gray-front.png" id="big-img" class="main-img">
+        
+        <div class="thumbnails">
+            <img src="s21-gray-front.png" class="thumb" onclick="changeImage(this.src)">
+            <img src="s21-gray-back.png" class="thumb" onclick="changeImage(this.src)">
+            <img src="s21-gray-side.png" class="thumb" onclick="changeImage(this.src)">
+            <img src="s21-gray-top.png" class="thumb" onclick="changeImage(this.src)">
+        </div>
+    </div>
+
+    <script>
+        function changeImage(src) {
+            document.getElementById('big-img').src = src;
+        }
+    </script>
+</body>
+</html>
